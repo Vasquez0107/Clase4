@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid"> 
+        <form action="recibirformulario.html" method="post">
+            <fieldset>
+                <legend>Informacion</legend>
+            <label for="tDoc">Tipo De Documento</label> <br>
+                <input type="text" id="tDoc" name="tDoc"><br><br>
+            <label for="nDoc"> * Nro. De Documento</label> <br>
+                <input type="text" id="nDoc" name="nDoc" required autofocus><br><br>
+            <label for="email">Correo</label> <br>
+                <input type="email" id="email" disabled> <br> <br>
+            <label for="clave">Password</label> <br>
+                <input type="password" id="clave"> <br><br>
+            <label for="nombres">Nombres</label> <br>
+                <input type="text" id="nombres" name="nombres" value="Felipe" readonly disabled><br><br>
+            <label for="pApellidos">1rApellido</label> <br>
+                <input type="text" id="pApellidos" name="pApellidos" size="4" maxlength="5"><br><br>
+            <label for="sApellidos">2oApellido</label> <br>
+                <input type="text" id="sApellidos" name="sApellidos"><br><br>
+            <label for="genero">Genero</label>:<br>
+                <input type="radio" name="genero" id= "f" value="F">Femenino
+            <input type="radio" name="genero" id= "m" value="M">Masculino
+                <input type="radio" name="genero" id="p" value="P">Prefiero no Decirlo <br><br>
+                <label for="">Nacionalidad</label> <br>
+                <select name="pais" id="pais" multiple size="2"> <br><br>
+                    <option value="">Seleccione</option> <br><br>
+                    <option value="col">Colombiana</option>
+                    <option value="ven" selected>Venezolana</option>
+                    <option value="mus">Musulmana</option>
+                    <option value="jud">Judio</option>
+                    <option value="chi">Chileno</option> <br><br>
+                </select>
+                    <br><br>
+                    
+                <label for="ciu">Ciudad</label> <br> 
+                    <input list="ciu">
+                    <datalist id="ciu"
+                        <option value="Medellin"></option>
+                        <option value="Bogota"></option>
+                        <option value="Barranquilla"></option>
+                        <option value="Barrancabermeja">Barrancabermeja</option>
+                        <option value="Cali"></option>
+                        <option value="Sincelejo"></option>
+                        <option value="Villavicencio0"></option>
+                        <option value="Santa Marta"></option> <br> <br>
+                    </select>
+                    </datalist> <br>
+                    <br><br>
+                <label for="file">Suba hoja de vida</label><br>
+                    <input type="file" id="file"> <br>
+                    <br><br>
+                <label for="mes">Escoga el mes que mas le gusta</label><br>
+                    <input type="month">
+                    <input type="date">
+                    <input type="week">
+                    <input type="datetime-local">
+                    <input type="tel">
+        </fieldset> 
+            <br><br>
+            <fieldset> 
+                <legend>Gustos</legend> <br><br>
+            <label for="hobbies">Hobbies:</label><br>
+                <input type="checkbox" name="Hobby1" id="Hobby1">Musica
+                <input type="checkbox" name="Hobby2" id="Hobby2">Pintar
+                <input type="checkbox" name="Hobby3" id="Hobby3">Deportivo
+                <input type="checkbox" name="Hobby4" id="Hobby4">Leer
+                <input type="checkbox" name="Hobby5" id="Hobby5">Bailar <br> <br>
+            <label for="pasion">¿Que es la pasion?</label> <br><br>
+                <textarea cols="30" rows="5" name="pasion" id="pasion">-</textarea> <br>
+        </fieldset>
+                <br><br>
+            <button type="button" onclick="alert('hecho...')"> Cancelar </button>
+            <button>
+            <input type="submit" value="Guardar">
+            <input type="submit" id="">
+            <img src="img/imagen34.jpg" alt="">
+            </button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
